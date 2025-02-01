@@ -1,0 +1,461 @@
+h1 {
+  color: black;
+}
+#selector {
+  ol {
+    margin-left: -40px;
+    margin-top: -20px;
+    list-style-position: inside;
+  }
+
+  /* Write your CSS below, don't change the rules above. */
+
+  /* TODO 1: Set the CSS for all paragraph tags to "color: red;" */
+  p {
+    color: red;
+  }
+
+  /* TODO 2: Set the CSS for all elements with a class of "note" to "font-size: 20px;" */
+  .note {
+    font-size: 20px;
+  }
+
+  /* TODO 3: Set the CSS for the element with an id of "id-selector-demo" to "color: green;" */
+  #id-selector-demo {
+    color: green;
+  }
+
+  /* TODO 4: Set the CSS for the li elements that have the "value" attribute set to "4" to have "color: blue;" */
+  li[value="4"] {
+    color: blue;
+  }
+
+  /* TODO 5: Set all elements to have "font-family: sans-serif;" */
+  #selector * {
+    text-align: center;
+  }
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+.color-title {
+  font-weight: normal;
+}
+
+#red {
+  color: red;
+}
+
+#blue {
+  color: blue;
+}
+
+#orange {
+  color: orange;
+}
+
+#green {
+  color: green;
+}
+
+#yellow {
+  color: yellow;
+}
+/* body {
+  background-color: antiquewhite;
+} */
+
+#hello {
+  color: whitesmoke;
+  background-color: darkseagreen;
+}
+
+#world {
+  color: #faf8f1;
+  background-color: #c58940;
+}
+
+/* html {
+  font-size: 30px;
+} */
+
+.fontProperties {
+  background-color: cornflowerblue;
+  color: white;
+  font-size: 18px;
+
+  /* 1. Change the color of <p>Color</p> to "coral" color. */
+  #color {
+    color: coral;
+  }
+
+  /* 2. Change the font size of <p>Font Size</p> to to 2X the size of the root (html) element. */
+  #size {
+    font-size: 2rem;
+  }
+
+  /* 3. Change the font weight of <p>Font Weight</p> to 900. */
+  #weight {
+    font-weight: 900;
+  }
+
+  /* 4. Change the font family of <p>Font Family</p> to the Google font Caveat with regular (400) font weight.
+      Link: https://fonts.google.com/specimen/Caveat */
+  #family {
+    font-family: "Caveat", cursive;
+  }
+
+  /* 5. Change the <p>Text Align</p> to right align. */
+  #align {
+    text-align: right;
+  }
+}
+#boxModel {
+  div {
+    height: 200px;
+    width: 200px;
+  }
+  #first {
+    padding: 20px;
+    background-color: cadetblue;
+    border: 10px solid black;
+  }
+  p {
+    margin: 0;
+  }
+  #second {
+    background-color: gold;
+    border: solid black;
+    border-width: 20px 10px;
+    margin-left: 260px;
+  }
+  #third {
+    background-color: indianred;
+    border: 10px solid black;
+    margin-left: 40px;
+  }
+}
+
+.memeProj {
+  background-color: black;
+  padding: 20px;
+  h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: white;
+  }
+
+  .poster {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 100px;
+    color: white;
+    font-family: "Libre Baskerville", serif;
+    text-align: center;
+  }
+
+  .motivation-img {
+    border: 5px solid white;
+    width: 100%;
+  }
+}
+
+.cascade {
+  #outer-box {
+    background-color: purple;
+  }
+
+  .box {
+    background-color: blue;
+    padding: 10px;
+  }
+
+  .inner-box {
+    background-color: red;
+  }
+
+  p {
+    color: yellow;
+    margin: 0;
+    padding: 0;
+  }
+
+  .white-text {
+    color: white;
+  }
+}
+
+.combiningSelector {
+  /* Group */
+  h1,
+  h2 {
+    color: blueviolet;
+  }
+
+  /* Child */
+  .box > p {
+    color: firebrick;
+  }
+
+  /* Descendent */
+  .box li {
+    color: blue;
+  }
+
+  /* Chained */
+  li.done {
+    color: green;
+  }
+
+  /* Multiple Combiners */
+  ul p.done {
+    font-size: 0.5rem;
+  }
+}
+.positioning {
+  .blue-box {
+    background-color: blue;
+    width: 500px;
+    height: 300px;
+    /* top: 200px; */
+    left: 200px;
+    position: relative;
+  }
+  .red-circle {
+    width: 200px;
+    height: 200px;
+    top: 150px;
+    left: 250px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+  }
+  .pt-1 {
+    margin-top: 90px !important;
+  }
+}
+.flagProj {
+  .flag {
+    width: 900px;
+    height: 600px;
+    position: relative;
+    background-color: #ce1126;
+  }
+
+  .flag > div {
+    background-color: #002868;
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+  }
+  .flag > div > div {
+    background-color: white;
+    position: absolute;
+
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    top: 50px;
+    left: 350px;
+  }
+
+  p {
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .flag > div div p {
+    color: black;
+  }
+}
+.display {
+  p {
+    color: white;
+  }
+
+  .red {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+  }
+
+  .green {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+  }
+
+  .blue {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+  }
+}
+
+.display2 {
+  p {
+    color: white;
+  }
+
+  .red {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+  }
+
+  .green {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+  }
+
+  .blue {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+  }
+}
+.float {
+  div {
+    display: inline-block;
+    width: 40%;
+  }
+
+  p {
+    font-size: 2em;
+  }
+
+  .cat {
+    float: left;
+    background-color: aquamarine;
+  }
+
+  .dog {
+    float: right;
+    background-color: coral;
+  }
+
+  img {
+    float: left;
+  }
+
+  footer {
+    clear: both;
+    text-align: center;
+    background-color: blueviolet;
+  }
+}
+.flexDisplay {
+  p {
+    font-weight: 700;
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .container {
+    padding: 10px;
+    background-color: gold;
+    display: flex;
+    gap: 10px;
+  }
+}
+.flexDirection {
+  .container {
+    color: white;
+    border: 5px solid gold;
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  .container > * {
+    flex-basis: 100px;
+  }
+
+  .red {
+    background-color: #eb4d4b;
+  }
+
+  .orange {
+    background-color: #f0932b;
+  }
+
+  .yellow {
+    background-color: #f6e58d;
+  }
+
+  .green {
+    background-color: #6ab04c;
+  }
+
+  .blue {
+    background-color: #4834d4;
+  }
+
+  .indigo {
+    background-color: #30336b;
+  }
+
+  .purple {
+    background-color: #be2edd;
+  }
+}
+.gridDisplay {
+  .container {
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .white {
+    height: 100px;
+    width: 100px;
+    background-color: #f0d9b5;
+  }
+
+  .black {
+    height: 100px;
+    width: 100px;
+    background-color: #b58863;
+  }
+}
+.gridSizing {
+  body {
+    font-family: sans-serif;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f2f2f2;
+  }
+
+  .item {
+    width: 200px;
+    margin: 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    line-height: 2;
+    font-size: 24px;
+  }
+}
